@@ -1,0 +1,19 @@
+
+body{
+    background-color: #2b879e;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    width:  min-content;
+    align-items: center;
+}
+figure{
+    display: flex;
+    justify-content: center;
+}
