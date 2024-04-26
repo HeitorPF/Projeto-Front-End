@@ -7,7 +7,7 @@ body{
     font-family: "Exo", sans-serif;
 }
 
-.form{
+form{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,7 +20,7 @@ body{
 }
 
 label{
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .input{
@@ -33,7 +33,14 @@ label{
 }
 
 .input input{
+    min-width: 225px;
     outline: none;
     border: none;
 }
 
+input[type="submit"]{
+    margin-left: 25%;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    font-size: 25px;
+}
