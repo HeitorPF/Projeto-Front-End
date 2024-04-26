@@ -10,16 +10,19 @@
     <figure>
         <img src="imgs/pngwing.com.png" alt="Cursos" width="450" height="150">
     </figure>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <section class="form">
-        <form >
-            <i class="material-icons">mail</i>
-            <label for="email">E-mail:</label><br>
+    <script src="https://kit.fontawesome.com/c550c4b1e9.js" crossorigin="anonymous"></script>
+    <form >
+        <label for="email">E-mail:</label><br>
+        <section class="input">
+            <i class="fa-solid fa-envelope"></i>
             <input type="email" id="email" name="email" placeholder="Insira um e-mail válido" required><br>
-            <label for="senha">Senha:</label><br>
-            <input type="password" id="senha" name="senha" required><br><br>
-            <input type="submit" value="Entrar">
-        </form>
-    </section>
+        </section>
+        <label for="senha">Senha:</label><br>
+        <section class="input">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" id="psw" name="psw" required><br>
+        </section>
+        <input type="submit" value="Entrar">
+    </form>
 </body>
 </html>

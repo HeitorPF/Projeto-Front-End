@@ -2,7 +2,7 @@
 body{
     background-color: #2b879e;
 }
-.form{
+form{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -16,4 +16,18 @@ body{
 figure{
     display: flex;
     justify-content: center;
+}
+
+.input{
+    min-width: 250px;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px; 
+    outline: none;
+    margin: 0px 0px 12px -5px;   
+}
+
+.input input{
+    outline: none;
+    border: none;
 }
