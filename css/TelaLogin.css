@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    background-color: #2b879e;
+    background-color: #1c1919;
     font-family: "Exo", sans-serif;
 }
 form{
@@ -9,7 +9,7 @@ form{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: #3118a2;
     border-radius: 20px;
     padding: 50px;
     width:  min-content;
@@ -20,23 +20,34 @@ figure{
     justify-content: center;
 }
 
+label {
+    color: #EEEEEE;
+}
 .input{
+    color: #363636;
+    background-color: #A7A6A6;
     min-width: 250px;
     padding: 10px;
-    border: 2px solid #000000;
+    border: 2px solid #A7A6A6;
     border-radius: 10px; 
     outline: none;
     margin: 0px 0px 12px -5px;   
 }
 
 .input input{
+    color: #363636;
+    background-color: #A7A6A6;
     outline: none;
     border: none;
 }
-
+a {
+    color: #EEEEEE;
+}
 input[type="submit"]{
+    color: #363636;
+    background-color: #A7A6A6;
     margin-left: 33%;
-    border: 2px solid #000000;
+    border: 2px solid #A7A6A6;
     border-radius: 10px;
     font-size: 25px;
 }
