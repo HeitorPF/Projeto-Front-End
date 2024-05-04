@@ -4,6 +4,18 @@ body{
     background: linear-gradient(to right, #ADD8E6, #7FFFD4, #FFFF99);
 }
 
+nav {
+    h2{
+        text-align: center;
+    }
+    font-size: larger;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    width: 15vw;
+    height: 98vh;
+}
+
 .container {
     width: 30%;
     margin: 0 auto;
