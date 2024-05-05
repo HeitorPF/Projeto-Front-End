@@ -28,6 +28,18 @@ figure{
     justify-content: center;
 }
 
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a5276;
+    border-radius: 20px;
+    padding: 50px;
+    width:  min-content;
+    align-items: center;
+}
+
 form{
     position:absolute;
     top: 75%;
