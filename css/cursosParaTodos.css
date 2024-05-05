@@ -8,22 +8,25 @@ body{
 }
 
 nav {
-    a{
-      color: #ACACAC;   
-      text-decoration-line: none;
-    }
-    h2{
-        text-align: center;
-    }
-    p{
-        margin-left: 20px;
-    }
     font-size: larger;
     background-color:#1a5276;
     border-radius: 10px;
     float: left;
     width: 15vw;
     height: 98vh;
+}
+
+nav a{
+    color: #ACACAC;   
+    text-decoration-line: none;
+}
+
+nav h2{
+    text-align: center;
+}
+
+nav p{
+    margin-left: 20px;
 }
 
 figure{
