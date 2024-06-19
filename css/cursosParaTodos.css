@@ -5,6 +5,8 @@ body{
     background-color: #1c1919;
     font-family: "Exo", sans-serif;
     color: #EEEEEE;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
@@ -29,35 +31,37 @@ nav p{
     margin-left: 20px;
 }
 
+#admin{
+    margin-left: 0;
+    text-align: center;
+}
+
+#admin button{
+    font-family: "Exo", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    color:black;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer; 
+}
+
 figure{
     display: flex;
     justify-content: center;
 }
 
-.login{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #1a5276;
-    border-radius: 20px;
-    padding: 50px;
-    width:  min-content;
-    align-items: center;
-}
-
 form{
-    position:absolute;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    padding: 50px;
     background: #1a5276;
     border-radius: 20px;
-    padding: 50px;
     width:  min-content;
     align-items: center;
 }
-
 
 .input{
     color: #363636;
@@ -70,24 +74,36 @@ form{
     margin: 0px 0px 12px -5px;   
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #A7A6A6 inset;
+}
+
 .input input{
     color: #363636;
     background-color: #A7A6A6;
     outline: none;
     border: none;
+    width: 220px;
 }
 
 a {
     color: #EEEEEE;
 }
 
-input[type="submit"]{
+input[type="submit"], button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
     color: #363636;
     background-color: #A7A6A6;
-    margin-left: 33%;
     border: 2px solid #A7A6A6;
     border-radius: 10px;
     font-size: 25px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    opacity: 0.8;
 }
 
 h1 {
