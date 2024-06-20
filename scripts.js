@@ -18,7 +18,7 @@ function addUser(event) {
     const listItem = document.createElement('li');
     listItem.textContent = `${timestamp} - Nome: ${name}, E-mail: ${email}`;
     userList.appendChild(listItem);
-    localStorage.setItem(email, JSON.stringify(userData));
+    localStorage.setItem('user', JSON.stringify(userData));
     form.reset();
 }
 
