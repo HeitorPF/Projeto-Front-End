@@ -13,7 +13,7 @@
             <img src="imgs/LogoCursosBranca.png" alt="Cursos" width="400" height="150">
         </figure>
     </header>
-    <form>
+    <form id="formulario">
         <h2>Cadastrar Novo Usuário</h2>
         <label for="name">Nome do Usuário:</label><br>
         <div class="input"> 
@@ -25,9 +25,12 @@
             <i class="fa-solid fa-envelope"></i>
             <input type="email" id="email" name="email" placeholder="E-mail" required><br>
         </div>
-        <button>Limpar</button>      
-        <input type="submit" value="Cadastrar">
+        <button type="button" id="botao-limpar">Limpar</button>      
+        <input type="submit" id="botao-adicionar" value="Cadastrar">
     </form>
+    <input type="text" id="pesquisa" placeholder="Pesquisar...">
+    <ul id="userList"></ul>
+    <button type="button" id="botao-deletar">Excluir Todos</button>    
     <script src="scripts.js"></script>
 </body>
 </html>
