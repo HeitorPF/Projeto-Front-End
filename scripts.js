@@ -53,13 +53,13 @@ function deleteAllUsers() {
 
 function pesquisa(){
     const dados = JSON.parse(localStorage.getItem('user'))
-    let pesq = search.value + '';
+    let pesq = search.value.toLowerCase() + '';
     selecionados = [];
     if(pesq != '') {
         userList.innerHTML = '';
         for(let i=0; i<cadastrados.length;i++){
-            let nome = dados[i].name + '';
-            let email = dados[i].email + '';
+            let nome = dados[i].name.toLowerCase() + '';
+            let email = dados[i].email.toLowerCase() + '';
     
             if(nome.includes(pesq) || email.includes(pesq)){
                 const listItem = document.createElement('li');
