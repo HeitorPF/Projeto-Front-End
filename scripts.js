@@ -91,13 +91,12 @@ function allUsers(){
 function remover(){
     let tam = selecionados.length;
     for(let i=0; i<tam;i++){
-        console.log(selecionados);
         let resp = confirm(`deseja realmente excluir ${selecionados[i]}?`);
         if(resp == true){
             let mail = selecionados[i];
             for(let x=0; x<cadastrados.length;x++){
                 if(cadastrados[x].email == mail){
-                    cadastrados.splice(i, 1);
+                    cadastrados.splice(x, 1);
                 }
             }
             localStorage.setItem('user', JSON.stringify(cadastrados)); 
@@ -105,8 +104,8 @@ function remover(){
         else{
             alert("exclusão cancelada!");
         }
-        selecionados.shift();
     }
+    selecionados = [];
     allUsers();
         
     }
