@@ -1,6 +1,5 @@
 let list = document.querySelector('ul');
 
-const pesqbot = document.getElementById("botao-pesquisar")
 const form = document.getElementById('formulario');
 const userList = document.getElementById('userList');
 const addButton = document.getElementById('botao-adicionar');
@@ -137,7 +136,7 @@ list.addEventListener('click', function (ev) {
 
 
 deleteChecked.addEventListener('click', remover)
-pesqbot.addEventListener('click', pesquisa);
+search.addEventListener('input', pesquisa);
 renderUserList();
 addButton.addEventListener('click', addUser);
 clearButton.addEventListener('click', limparForm);
