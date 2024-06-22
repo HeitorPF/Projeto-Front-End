@@ -139,3 +139,9 @@ li{
     font-family: "Dancing Script", cursive;
     
 }
+
+ul li.checked {
+    background: #c90e0e;
+    color: #fff;
+    text-decoration: line-through;
+}
