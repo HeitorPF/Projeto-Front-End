@@ -102,8 +102,12 @@ input[type="submit"], button{
     cursor: pointer;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover, button:hover{
     opacity: 0.8;
+}
+
+input[type="submit"]:active, button:active{
+    opacity: 0.6;
 }
 
 h1 {
@@ -135,13 +139,30 @@ h1 {
     transform: scale(1.1);
 }
 
+ul{
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    color: black;
+}
+
 li{
-    font-family: "Dancing Script", cursive;
-    
+    background-color: #A7A6A6;
+    cursor: pointer;
+}
+
+li:hover{
+    opacity: 0.8;
 }
 
 ul li.checked {
     background: #c90e0e;
     color: #fff;
     text-decoration: line-through;
+}
+
+#psq{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100px;
 }

@@ -1,5 +1,3 @@
-let list = document.querySelector('ul');
-
 const form = document.getElementById('formulario');
 const userList = document.getElementById('userList');
 const addButton = document.getElementById('botao-adicionar');
@@ -31,9 +29,6 @@ function addUser(event) {
     const timestamp = new Date().toLocaleDateString();
     const userData = { id: userCount++, name, email, timestamp };
     cadastrados.push(userData);
-    const listItem = document.createElement('li');
-    listItem.textContent = `${timestamp} - Nome: ${name}, E-mail: ${email}`;
-    userList.appendChild(listItem);
     localStorage.setItem('user', JSON.stringify(cadastrados));
     renderUserList();
     form.reset();
@@ -44,11 +39,17 @@ function limparForm() {
 }
 
 function deleteAllUsers() {
-    userList.innerHTML = '';
-    cadastrados = [];
-    selecionados = [];
-    localStorage.clear();
-    renderUserList();
+    let resp = confirm(`deseja realmente excluir todos os usuarios?`);
+    if(resp == true){
+        userList.innerHTML = '';
+        cadastrados = [];
+        selecionados = [];
+        localStorage.clear();
+        renderUserList();
+    }
+    else{
+        alert("exclusão cancelada!");
+    }
 }
 
 function pesquisa(){
@@ -70,23 +71,9 @@ function pesquisa(){
         }
     }
     else{
-        allUsers();
-    }
-    
+        renderUserList();
+    } 
 }
-
-function allUsers(){
-    userList.innerHTML = '';
-    for(let i=0; i<cadastrados.length;i++){
-        const name = cadastrados[i].name;
-        const email = cadastrados[i].email;
-        const timestamp = cadastrados[i].timestamp;   
-        const listItem = document.createElement('li');
-        listItem.textContent = `${timestamp} - Nome: ${name}, E-mail: ${email}`;
-        userList.appendChild(listItem)
-    }
-}
-
 
 function remover(){
     let tam = selecionados.length;
@@ -106,11 +93,11 @@ function remover(){
         }
     }
     selecionados = [];
-    allUsers();
+    renderUserList();
         
     }
 
-list.addEventListener('click', function (ev) {
+userList.addEventListener('click', function (ev) {
     if (ev.target.tagName === 'LI') {
         ev.target.classList.toggle('checked');
         if(ev.target.classList == 'checked'){
@@ -132,11 +119,9 @@ list.addEventListener('click', function (ev) {
     }
 });
 
-
-
+renderUserList();
 deleteChecked.addEventListener('click', remover)
 search.addEventListener('input', pesquisa);
-renderUserList();
 addButton.addEventListener('click', addUser);
 clearButton.addEventListener('click', limparForm);
 deleteAllButton.addEventListener('click', deleteAllUsers);
