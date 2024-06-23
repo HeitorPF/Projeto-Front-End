@@ -139,26 +139,31 @@ h1 {
     transform: scale(1.1);
 }
 
-ul{
-    text-align: center;
-    list-style: none;
-    padding-left: 0;
-    color: black;
-}
-
 li{
-    background-color: #A7A6A6;
-    cursor: pointer;
+    font-family: "Dancing Script", cursive;
 }
 
 li:hover{
     opacity: 0.8;
 }
 
-ul li.checked {
+#userList li.checked {
     background: #c90e0e;
     color: #fff;
     text-decoration: line-through;
+}
+
+#userList{
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    color: black; 
+}
+
+#userList li{
+    background-color: #A7A6A6;
+    cursor: pointer;
+    font-family: "Exo", sans-serif;
 }
 
 #psq{
